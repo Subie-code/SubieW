@@ -68,3 +68,11 @@ if (longFoodNames.length > shortFoodNames.length) {
   console.log("There are the same number of long and short foods.");
 }
 
+// 10. STRETCH: Find the longest food name
+let longestFood = friendFavorites[0];
+for (let i = 1; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].length > longestFood.length) {
+    longestFood = friendFavorites[i];
+  }
+}
+console.log(`The longest food name in the list is ${longestFood} with ${longestFood.length} characters.`);
