@@ -45,3 +45,26 @@ for (let i = 0; i < friendFavorites.length; i++) {
   }
 }
 console.log(foodsWithA);
+
+// 7 and 8. Split the friends' foods into long and short names
+const longFoodNames = [];
+const shortFoodNames = [];
+for (let i = 0; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].length > 6) {
+    longFoodNames.push(friendFavorites[i]);
+  } else {
+    shortFoodNames.push(friendFavorites[i]);
+  }
+}
+
+// 9. Print both arrays and compare
+console.log(longFoodNames);
+console.log(shortFoodNames);
+if (longFoodNames.length > shortFoodNames.length) {
+  console.log("There are more long-named foods.");
+} else if (shortFoodNames.length > longFoodNames.length) {
+  console.log("There are more short-named foods.");
+} else {
+  console.log("There are the same number of long and short foods.");
+}
+
